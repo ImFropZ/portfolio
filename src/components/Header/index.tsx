@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   avatar,
   HeaderBackground,
   FacebookIcon,
-  YoutubeIcon,
   GithubIcon,
   TelegramIcon,
   EmailIcon,
   InstagramIcon,
+  LinkedinIcon,
 } from "../../asset";
 import classes from "./Header.module.css";
 import { ToggleLang } from "..";
@@ -48,19 +48,19 @@ function Header() {
   function socialMediaHandler(name: string) {
     switch (name) {
       case "facebook":
-        window.open(process.env.REACT_APP_FACEBOOK_URL, "_blank");
+        window.open(import.meta.env.VITE_FACEBOOK_URL, "_blank");
         break;
-      case "youtube":
-        window.open(process.env.REACT_APP_YOUTUBE_URL, "_blank");
+      case "linkedin":
+        window.open(import.meta.env.VITE_LINKEDIN_URL, "_blank");
         break;
       case "github":
-        window.open(process.env.REACT_APP_GITHUB_URL, "_blank");
+        window.open(import.meta.env.VITE_GITHUB_URL, "_blank");
         break;
       case "instagram":
-        window.open(process.env.REACT_APP_INSTAGRAM_URL, "_blank");
+        window.open(import.meta.env.VITE_INSTAGRAM_URL, "_blank");
         break;
       case "telegram":
-        window.open(process.env.REACT_APP_TELEGRAM_URL, "_blank");
+        window.open(import.meta.env.VITE_TELEGRAM_URL, "_blank");
         break;
       case "email":
         nav("/contact");
@@ -97,10 +97,10 @@ function Header() {
             className={`${classes.socialMedia} ${classes.youtube}`}
             style={socialMediaStyle.youtube}
             onClick={() => {
-              socialMediaHandler("youtube");
+              socialMediaHandler("linkedin");
             }}
           >
-            <YoutubeIcon />
+            <LinkedinIcon />
           </div>
           <div
             className={`${classes.socialMedia} ${classes.github}`}
@@ -141,7 +141,6 @@ function Header() {
         </div>
         <div className={`${classes.info}`}>
           <h2>{t("name")} </h2>
-          <h3>{t("phoneNumber")} : +855 (0)96 910 9435</h3>
           <h3>Email : LimTangmeng100@gmail.com</h3>
         </div>
       </div>

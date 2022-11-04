@@ -13,7 +13,6 @@ i18next
         translation: {
           flag: USFlag,
           name: "Lim Tangmeng",
-          phoneNumber: "Phone",
           address: "Address",
           skill: "Skill",
           education: "Education",
@@ -40,7 +39,6 @@ i18next
         translation: {
           flag: CambodiaFlag,
           name: "លីម​ តាំងម៉េង",
-          phoneNumber: "លេខទូរស័ព្ទ",
           address: "អាស័យដ្ឋាន",
           skill: "ជំនាញ",
           education: "ការអប់រំ",

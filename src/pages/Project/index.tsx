@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { ImageSection, DescriptionSection } from "../../components";
+import { ImageContainer, InformationSection } from "../../components";
 import { BackIcon } from "../../asset";
 import classes from "./Project.module.css";
 import { useTranslation } from "react-i18next";
@@ -31,8 +31,8 @@ function Project() {
       </div>
       <h1 className={classes.name}>{project.name}</h1>
       <div className={classes.container}>
-        <ImageSection image={project.image} />
-        <DescriptionSection
+        <ImageContainer image={project.image} />
+        <InformationSection
           desc={description}
           languages={project.language}
           other={project.other}
