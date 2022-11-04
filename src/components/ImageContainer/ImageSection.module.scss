@@ -1,0 +1,32 @@
+@use "../../abstract" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    $width: 28em;
+
+    width: $width;
+    height: image-height($width, 5, 4);
+    border-radius: 0.6em;
+    box-shadow: 0.1em 0.1em 0.7em 0 #0009;
+    cursor: pointer;
+    
+    @include for-tablet {
+      $width: 350px;
+
+      width: $width;
+      height: image-height($width, 5, 4);
+    }
+
+    @include for-mobile-portrait {
+      $width: 250px;
+
+      width: $width;
+      height: image-height($width, 5, 4);
+    }
+
+  }
+}

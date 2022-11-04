@@ -1,0 +1,21 @@
+.btn {
+  position: absolute;
+  z-index: 10 !important;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  
+  img {
+    border: 2px solid #0005;
+    width: 2.5em;
+    height: 1.7em;
+    border-radius: 1000px;
+
+    &:hover {
+      border: 2px solid #000;
+    }
+  }
+}

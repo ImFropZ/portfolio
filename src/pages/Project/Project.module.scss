@@ -1,0 +1,68 @@
+@use "../../abstract" as *;
+
+.body {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  margin-bottom: 5em;
+
+  .BackIcon {
+    position: absolute;
+    top: -0.3em;
+    left: 1em;
+    cursor: pointer;
+    transform: scale(0.7);
+
+    svg {
+      fill: themeColor($theme, primary);
+      stroke: themeColor($theme, primary);
+    }
+  }
+
+  .name {
+    text-align: center;
+    font-family: "Iceberg";
+    text-decoration: underline;
+    color: themeColor($theme, primary);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    gap: 5em;
+    margin-top: 1.5em;
+  }
+
+  @include for-tablet {
+    .BackIcon {
+      top: -0.5em;
+      transform: scale(0.6);
+    }
+
+    .name {
+      font-size: 1.3em;
+    }
+
+    .container {
+      flex-direction: column;
+      gap: 2em;
+    }
+  }
+
+  @include for-mobile-portrait {
+    .BackIcon {
+      top: -0.5em;
+      transform: scale(0.6);
+    }
+
+    .name {
+      font-size: 1.3em;
+    }
+
+    .container {
+      flex-direction: column;
+      gap: 2em;
+    }
+  }
+}

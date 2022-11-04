@@ -1,0 +1,107 @@
+@use "../../abstract" as *;
+
+.header {
+  display: grid;
+  place-items: center;
+
+  .headerBg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 20em;
+    z-index: -1;
+
+    svg {
+      fill: themeColor($theme, fg);
+      stroke: themeColor($theme, fg);
+    }
+  }
+
+  .address {
+    font-family: "Inter", "Kantumruy";
+    color: #8d4400;
+    position: absolute;
+    top: 5em;
+    left: 2em;
+
+    p {
+      font-family: "Inter", "Kantumruy";
+      font-weight: 400;
+      color: themeColor($theme, primary);
+    }
+
+    @include for-mobile-portrait {
+      display: none;
+      position: relative;
+      top: 0;
+      left: 0;
+      text-align: center;
+    }
+  }
+
+  .personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20em;
+    height: 285px;
+
+    .profile {
+      position: relative;
+      margin-bottom: 1em;
+
+      .picture {
+        position: relative;
+        width: 8em;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 2;
+        border: 0.2em solid #0001;
+        transition: border 0.3s ease-in-out;
+
+        &:hover {
+          border: 0.2em solid #000;
+        }
+      }
+
+      .socialMedia {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 2.5em;
+        height: 2.5em;
+        transition: transform 0.7s ease-in-out;
+        z-index: 1;
+        cursor: pointer;
+
+        svg {
+          fill: themeColor($theme, primary);
+        }
+      }
+    }
+
+    .info {
+      text-align: center;
+      color: themeColor($theme, primary);
+
+      h2 {
+        font-family: "Inter", "Kantumruy";
+        font-size: 1.7em;
+        font-weight: 400;
+      }
+
+      h3 {
+        font-family: "Inter", "Kantumruy";
+        font-size: 0.9em;
+        font-weight: 400;
+      }
+    }
+  }
+}

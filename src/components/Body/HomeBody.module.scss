@@ -1,0 +1,101 @@
+@use "../../abstract" as *;
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+
+  .expContainer {
+    margin-top: 2em;
+
+    .skill,
+    .education {
+      margin-bottom: 1em;
+    }
+
+    .skill h2,
+    .education h2 {
+      color: themeColor($theme, primary);
+      font-family: "Iceberg", "Kantumruy";
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    .skill ul,
+    .education ul {
+      li {
+        color: themeColor($theme, secondary);
+        position: relative;
+        margin-top: 0.5em;
+        margin-left: 2em;
+      }
+    }
+  }
+
+  .projContainer {
+    .container {
+      position: relative;
+      margin-bottom: 1em;
+      display: grid;
+      place-items: center;
+
+      h1 {
+        color: themeColor($theme, primary);
+        font-family: "Iceberg", "Kantumruy";
+        font-size: 1.7em;
+        text-decoration: underline;
+        text-align: center;
+      }
+
+      h3 {
+        color: themeColor($theme, secondary);
+        font-family: "Iceberg", "Kantumruy";
+        font-size: 1.5em;
+        text-decoration: underline;
+        text-align: center;
+        margin: 0.5em 0 0.5em 0;
+      }
+
+      .refImg {
+        $width: 450px;
+
+        width: $width;
+        height: image-height($width, 5, 4);
+        box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: 0 0 0.7em 0;
+
+        @include for-mobile-portrait {
+          $width: 300px;
+          width: $width;
+          height: image-height($width, 5, 4);
+        }
+      }
+
+      .btn {
+        color: themeColor($theme, primary);
+        font-family: "Iceberg", "Kantumruy";
+        font-size: 14px;
+        line-height: 17px;
+        padding: 0.4em;
+        background-color: themeColor($theme, fg, 0.7);
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 500ms ease;
+
+        &:hover {
+          background-color: themeColor($theme, fg);
+        }
+
+        @include for-mobile-portrait {
+          position: relative;
+        }
+      }
+    }
+  }
+}

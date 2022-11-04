@@ -1,0 +1,40 @@
+@use "../../abstract" as *;
+
+.container {
+  width: 30ch;
+
+  .title {
+    text-align: center;
+    text-decoration: underline;
+    color: themeColor($theme, primary);
+  }
+
+  .context {
+    margin-top: 0.5em;
+    text-align: center;
+    color: themeColor($theme, secondary);
+  }
+
+  .wrapper {
+    margin-top: 0.3em;
+    color: themeColor($theme, primary);
+    
+    p {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    ul {
+      width: 100%;
+      display: grid;
+      place-content: center;
+      list-style: none;
+      color: themeColor($theme, secondary);
+
+      li::before {
+        content: "-";
+        margin-right: .5em;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@forward "./colors";
+
+@function image-height($width, $ratio-w, $ratio-h) {
+  $val: calc(calc($width * $ratio-h) / $ratio-w);
+  @return $val;
+}
+
+// Media Queries
+@mixin for-mobile-portrait {
+  @media screen and (max-device-width: 480px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media only screen and (min-width: 480px) and (max-width: 992px) {
+    @content;
+  }
+}
+
+// Color Function
+@function themeColor($theme, $key, $opacity: 1) {
+  $rgb: map-get($theme, $key);
+  $val: rgba($rgb, $opacity);
+  @return $val;
+}
+
+@mixin fully-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin fully-content-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  translate: -100% 0;
+}
+
+@mixin fully-content-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  translate: 100% 0;
+}
+
+@mixin fully-content-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  translate: 0 -100%;
+}
+
+@mixin fully-content-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  translate: 0 100%;
+}
