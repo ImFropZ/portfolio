@@ -6,21 +6,31 @@ type LoadingProps = {
 };
 
 function Loading(props: LoadingProps) {
-  const [isLoad, setLoad] = useState(false);
+  const [isLoading, setLoading] = useState(false);
 
   if (!sessionStorage.getItem("firstLoad")) {
     sessionStorage.setItem("firstLoad", "1");
-    setLoad(true);
+    setLoading(true);
     setTimeout(() => {
-      setLoad(false);
-    }, 3100);
+      setLoading(false);
+    }, 2200);
   }
 
   return (
     <>
-      {isLoad ? (
+      {isLoading ? (
         <div className={classes.loadWarpper}>
-          <span className={classes.load}>Lim Tangmeng</span>
+          <span>L</span>
+          <span>I</span>
+          <span>M</span>
+          <span>T</span>
+          <span>A</span>
+          <span>N</span>
+          <span>G</span>
+          <span>M</span>
+          <span>E</span>
+          <span>N</span>
+          <span>G</span>
         </div>
       ) : (
         props.children

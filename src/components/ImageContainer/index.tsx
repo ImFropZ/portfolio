@@ -1,5 +1,5 @@
 import { useState } from "react";
-import classes from "./ImageSection.module.css";
+import classes from "./ImageContainer.module.css";
 
 type ImageContainerProps = {
   image: Array<string>;

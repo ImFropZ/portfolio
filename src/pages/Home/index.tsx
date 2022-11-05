@@ -1,10 +1,15 @@
-import React from "react";
-import { HomeBody } from "../../components";
+import { About, Skill, Education, Project } from "../../components";
+import classes from "./Home.module.css";
 
 function HomePage() {
   return (
-    <div style={{ marginBottom: "5em" }}>
-      <HomeBody />
+    <div className={classes.body}>
+      <About />
+      <div className={classes.expContainer}>
+        <Skill />
+        <Education />
+      </div>
+      <Project />
     </div>
   );
 }

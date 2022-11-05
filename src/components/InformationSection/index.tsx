@@ -1,4 +1,4 @@
-import classes from "./DescriptionSection.module.css";
+import classes from "./InformationSection.module.css";
 import { useTranslation } from "react-i18next";
 
 type InformationSectionProps = {

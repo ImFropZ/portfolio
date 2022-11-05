@@ -1,0 +1,23 @@
+@use "../../abstract" as *;
+
+.container {
+  width: 40ch;
+
+  h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 0.4em;
+    color: themeColor($theme, primary);
+    font-family: "Iceberg", "Kantumruy";
+    text-transform: uppercase;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  a,
+  a:visited {
+    color: rgb(0, 130, 182);
+  }
+}

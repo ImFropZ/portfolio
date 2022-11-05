@@ -1,12 +1,12 @@
 import { Loading, Header, Footer } from "./components";
-import { HomePage, Project } from "./pages";
+import { HomePage, Project, Contact } from "./pages";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <Loading>
       <Routes>
-        <Route path="/contact" element={<h1>Under Contruction</h1>}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
         <Route
           path="*"
           element={
@@ -25,7 +25,7 @@ function App() {
         ></Route>
       </Routes>
     </Loading>
-  )
+  );
 }
 
-export default App
+export default App;

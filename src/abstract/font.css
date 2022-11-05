@@ -17,6 +17,12 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Itim";
+  src: url("./fonts/Itim-Regular.ttf");
+  font-weight: 400;
+}
+
 /* Khmer Font */
 @font-face {
   font-family: "Kantumruy";

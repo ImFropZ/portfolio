@@ -1,0 +1,22 @@
+@use "../../abstract" as *;
+
+.skill {
+  margin-bottom: 1em;
+
+  h2 {
+    color: themeColor($theme, primary);
+    font-family: "Iceberg", "Kantumruy";
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  ul {
+    li {
+      color: themeColor($theme, secondary);
+      position: relative;
+      margin-top: 0.5em;
+      margin-left: 2em;
+    }
+  }
+}

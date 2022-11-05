@@ -29,6 +29,13 @@ i18next
           description: "Description",
           language: "Language",
           other: "Other",
+          aboutme: "About Me",
+          rupp: "Royal University of Phnom Penh",
+          aboutmeDesc: {
+            firstHalf: "I’m a student from the",
+            lastHalf:
+              "also known as RUPP. I had an interest in being a Web Developer. I love seeking new knowledge.",
+          },
           livechat: {
             description:
               "The project is about getting a comment or chat on a live-stream video. Login with Facebook and Your account can bind with Gmail. This project uses Facebook API.",
@@ -55,6 +62,13 @@ i18next
           description: "ការពិពណ៌នា",
           language: "ភាសា",
           other: "ផ្សេងទៀត",
+          aboutme: "អំពីខ្ញុំ",
+          rupp: "សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ",
+          aboutmeDesc: {
+            firstHalf: "ខ្ញុំគឺជានិសិត្សនៅក្នុង",
+            lastHalf:
+              "ដែលហៅកាត់ថា RUPP.ហើយខ្ញុំមានចំណាប់អារម្មណ៍ទៅលើការធ្វើជា Web Developer.ខ្ញុំចូលចិត្តស្វែងរកចំណេះដឹងថ្មីៗ.",
+          },
           livechat: {
             description:
               "គម្រោងនេះធ្វើឡើងសម្រាប់ទទួលយក​ comment ឬ chat ចេញពីវីដេអូផ្សាយផ្ទាល់។ហើយអាចអ្នកចូលប្រើប្រាស់បាន ជាមួយគណនី Facebook របស់លោកអ្នក ហើយអាចភ្ជាប់ជាមួយគណនី Gmail បានទៀតផង។គម្រោងនេះគឺប្រើប្រាស់នូវ Facebook API។",
