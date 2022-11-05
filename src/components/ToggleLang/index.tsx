@@ -10,8 +10,8 @@ function ToggleLang() {
   };
 
   return (
-    <div onClick={onClickHandler} className={classes.btn}>
-      <img src={t("flag")} alt="flag" />
+    <div className={classes.btn}>
+      <img onClick={onClickHandler} src={t("flag")} alt="flag" />
     </div>
   );
 }
