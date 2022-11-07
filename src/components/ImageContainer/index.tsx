@@ -17,9 +17,11 @@ function ImageContainer(props: ImageContainerProps) {
   }
 
   return (
-    <div className={classes.container} onClick={changeHandler}>
-      <img src={image[page]} alt="reference" />
-    </div>
+    <>
+      <div className={classes.container}>
+        <img src={image[page]} alt="reference" onClick={changeHandler} />
+      </div>
+    </>
   );
 }
 

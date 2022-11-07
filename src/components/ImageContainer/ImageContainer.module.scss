@@ -9,24 +9,31 @@
     $width: 28em;
 
     width: $width;
-    height: image-height($width, 5, 4);
+    height: image-height($width, 16, 9);
     border-radius: 0.6em;
     box-shadow: 0.1em 0.1em 0.7em 0 #0009;
     cursor: pointer;
-    
+
     @include for-tablet {
       $width: 350px;
 
       width: $width;
-      height: image-height($width, 5, 4);
+      height: image-height($width, 16, 9);
     }
 
     @include for-mobile-portrait {
-      $width: 250px;
+      $width: 280px;
 
       width: $width;
-      height: image-height($width, 5, 4);
+      height: image-height($width, 16, 9);
     }
-
   }
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

@@ -40,6 +40,10 @@ i18next
             description:
               "The project is about getting a comment or chat on a live-stream video. Login with Facebook and Your account can bind with Gmail. This project uses Facebook API.",
           },
+          classmanagement: {
+            description:
+              "This application builds for managing the student and teachers in the education system. The main priority of this app is for easing CRUD (Create, Read, Update, Delete) on the data of the user.",
+          },
         },
       },
       kh: {
@@ -72,6 +76,10 @@ i18next
           livechat: {
             description:
               "គម្រោងនេះធ្វើឡើងសម្រាប់ទទួលយក​ comment ឬ chat ចេញពីវីដេអូផ្សាយផ្ទាល់។ហើយអាចអ្នកចូលប្រើប្រាស់បាន ជាមួយគណនី Facebook របស់លោកអ្នក ហើយអាចភ្ជាប់ជាមួយគណនី Gmail បានទៀតផង។គម្រោងនេះគឺប្រើប្រាស់នូវ Facebook API។",
+          },
+          classmanagement: {
+            description:
+              "កម្មវិធីនេះបង្កើតឡើងសម្រាប់គ្រប់គ្រងសិស្ស និងគ្រូបង្រៀននៅក្នុងប្រព័ន្ធអប់រំ។ អាទិភាពចម្បងនៃកម្មវិធីនេះគឺសម្រាប់ការ CRUD (Create, Read, Update, Delete) នៅលើទិន្នន័យរបស់អ្នកប្រើ។",
           },
         },
       },

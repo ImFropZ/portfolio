@@ -4,19 +4,19 @@ import { BackIcon } from "../../asset";
 import classes from "./Project.module.css";
 import { useTranslation } from "react-i18next";
 import { useProjectContext } from "../../hook";
+import { Navigate } from "react-router-dom";
 
 function Project() {
   const { t } = useTranslation();
   const { projectName } = useParams();
   const nav = useNavigate();
-  const project = useProjectContext().find(
-    (project) => project.id === projectName
-  ) || {
-    name: "Null",
-    image: ["404"],
-    language: [],
-    other: [],
-  };
+  const project =
+    useProjectContext().find((project) => project.id === projectName) || null;
+
+  if (project === null) {
+    alert("Project is not in the database");
+    return <Navigate to="/" />;
+  }
 
   const description = t(projectName + ".description") || "Null";
 
