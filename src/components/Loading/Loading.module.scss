@@ -17,30 +17,35 @@ $loading-bg-color: #a2a2a2;
 
   span {
     font-size: 1.6em;
+    opacity: 0;
 
     &:nth-child(1),
     &:nth-child(11) {
-      animation: jumpingLetter 1s ease-in-out;
+      animation: jumpingLetter 1s ease-in-out forwards;
     }
 
     &:nth-child(2),
     &:nth-child(10) {
-      animation: jumpingLetter 1s ease-in-out 0.3s;
+      animation: jumpingLetter 1s ease-in-out 0.3s forwards;
     }
 
     &:nth-child(3),
     &:nth-child(9) {
-      animation: jumpingLetter 1s ease-in-out 0.6s;
+      animation: jumpingLetter 1s ease-in-out 0.6s forwards;
     }
 
     &:nth-child(4),
     &:nth-child(8) {
-      animation: jumpingLetter 1s ease-in-out 0.9s;
+      animation: jumpingLetter 1s ease-in-out 0.9s forwards;
     }
 
     &:nth-child(5),
     &:nth-child(7) {
-      animation: jumpingLetter 1s ease-in-out 1.2s;
+      animation: jumpingLetter 1s ease-in-out 1.2s forwards;
+    }
+
+    &:nth-child(6) {
+      animation: jumpingLetter 1s ease-in-out 1.5s forwards;
     }
   }
 
@@ -51,27 +56,31 @@ $loading-bg-color: #a2a2a2;
     span {
       &:nth-child(1),
       &:nth-child(11) {
-        animation: jumpingLetterForSmallScreen 1s ease-in-out;
+        animation: jumpingLetterForSmallScreen 1s ease-in-out forwards;
       }
 
       &:nth-child(2),
       &:nth-child(10) {
-        animation: jumpingLetterForSmallScreen 1s ease-in-out 0.3s;
+        animation: jumpingLetterForSmallScreen 1s ease-in-out 0.3s forwards;
       }
 
       &:nth-child(3),
       &:nth-child(9) {
-        animation: jumpingLetterForSmallScreen 1s ease-in-out 0.6s;
+        animation: jumpingLetterForSmallScreen 1s ease-in-out 0.6s forwards;
       }
 
       &:nth-child(4),
       &:nth-child(8) {
-        animation: jumpingLetterForSmallScreen 1s ease-in-out 0.9s;
+        animation: jumpingLetterForSmallScreen 1s ease-in-out 0.9s forwards;
       }
 
       &:nth-child(5),
       &:nth-child(7) {
-        animation: jumpingLetterForSmallScreen 1s ease-in-out 1.2s;
+        animation: jumpingLetterForSmallScreen 1s ease-in-out 1.2s forwards;
+      }
+
+      &:nth-child(6) {
+        animation: jumpingLetterForSmallScreen 1s ease-in-out 1.5s forwards;
       }
     }
   }

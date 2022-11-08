@@ -13,7 +13,7 @@ function Loading(props: LoadingProps) {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2200);
+    }, 2500);
   }
 
   return (
