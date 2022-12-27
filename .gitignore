@@ -15,11 +15,6 @@ dist-ssr
 # Development
 .env
 
-# CSS file
-*.css
-*.css.map
-!font.css
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -1,0 +1,35 @@
+.container {
+  width: 30ch;
+}
+.container .title {
+  text-align: center;
+  text-decoration: underline;
+  color: #2c3333;
+}
+.container .context {
+  margin-top: 0.5em;
+  text-align: center;
+  color: #395b64;
+}
+.container .wrapper {
+  margin-top: 0.3em;
+  color: #2c3333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .wrapper p {
+  align-self: flex-start;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.container .wrapper ul {
+  width: 13ch;
+  flex-direction: column;
+  list-style: none;
+  color: #395b64;
+}
+.container .wrapper ul li::before {
+  content: "-";
+  margin-right: 0.5em;
+}/*# sourceMappingURL=InformationSection.module.css.map */

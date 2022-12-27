@@ -1,0 +1,11 @@
+.body {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  padding-bottom: 4em;
+}/*# sourceMappingURL=Home.module.css.map */

@@ -1,0 +1,26 @@
+.footer {
+  width: 90%;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em 1em 2em;
+  background: #a5c9ca;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.3333333333);
+  color: #2c3333;
+}
+.footer .copyright {
+  display: flex;
+  align-items: center;
+}
+.footer .copyright svg {
+  fill: #2c3333;
+}
+.footer .copyright .year,
+.footer .copyright .name {
+  font-family: "Inter", "Kantumruy";
+  margin-left: 0.5em;
+}/*# sourceMappingURL=Footer.module.css.map */

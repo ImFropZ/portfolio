@@ -1,0 +1,16 @@
+.skill {
+  margin-bottom: 1em;
+}
+.skill h2 {
+  color: #2c3333;
+  font-family: "Iceberg", "Kantumruy";
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+}
+.skill ul li {
+  color: #395b64;
+  position: relative;
+  margin-top: 0.5em;
+  margin-left: 2em;
+}/*# sourceMappingURL=Skill.module.css.map */

@@ -1,0 +1,56 @@
+.body {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  margin-bottom: 5em;
+}
+.body .BackIcon {
+  position: absolute;
+  top: -0.3em;
+  left: 1em;
+  cursor: pointer;
+  transform: scale(0.7);
+}
+.body .BackIcon svg {
+  fill: #2c3333;
+  stroke: #2c3333;
+}
+.body .name {
+  text-align: center;
+  font-family: "Iceberg";
+  text-decoration: underline;
+  color: #2c3333;
+}
+.body .container {
+  display: flex;
+  justify-content: space-around;
+  gap: 5em;
+  margin-top: 1.5em;
+}
+@media only screen and (min-width: 480px) and (max-width: 992px) {
+  .body .BackIcon {
+    top: -0.5em;
+    transform: scale(0.6);
+  }
+  .body .name {
+    font-size: 1.3em;
+  }
+  .body .container {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .body .BackIcon {
+    top: -0.5em;
+    transform: scale(0.6);
+  }
+  .body .name {
+    font-size: 1.3em;
+  }
+  .body .container {
+    flex-direction: column;
+    gap: 2em;
+  }
+}/*# sourceMappingURL=Project.module.css.map */

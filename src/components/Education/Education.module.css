@@ -1,0 +1,16 @@
+.education {
+  margin-bottom: 1em;
+}
+.education h2 {
+  color: #2c3333;
+  font-family: "Iceberg", "Kantumruy";
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+}
+.education ul li {
+  color: #395b64;
+  position: relative;
+  margin-top: 0.5em;
+  margin-left: 2em;
+}/*# sourceMappingURL=Education.module.css.map */
