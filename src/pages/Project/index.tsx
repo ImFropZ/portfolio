@@ -3,7 +3,7 @@ import { ImageContainer, InformationSection } from "../../components";
 import { BackIcon } from "../../asset";
 import classes from "./Project.module.css";
 import { useTranslation } from "react-i18next";
-import { useProjectContext } from "../../hook";
+import { useProjectContext } from "../../context/ProjectContext";
 import { Navigate } from "react-router-dom";
 
 function Project() {

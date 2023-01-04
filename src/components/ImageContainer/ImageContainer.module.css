@@ -5,7 +5,6 @@
 }
 .container img {
   width: 28em;
-  height: 15.75em;
   border-radius: 0.6em;
   box-shadow: 0.1em 0.1em 0.7em 0 rgba(0, 0, 0, 0.6);
   cursor: pointer;
@@ -13,13 +12,11 @@
 @media only screen and (min-width: 480px) and (max-width: 992px) {
   .container img {
     width: 350px;
-    height: 196.875px;
   }
 }
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
   .container img {
     width: 280px;
-    height: 157.5px;
   }
 }
 

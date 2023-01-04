@@ -1,8 +1,7 @@
 import classes from "./Project.module.css";
-import LiveChat from "../../asset/project/live_chat/dashboard.png";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useProjectContext } from "../../hook";
+import { useProjectContext } from "../../context/ProjectContext";
 
 function Project() {
   const { t } = useTranslation();
@@ -24,7 +23,7 @@ function Project() {
             <h3 className={classes.name}>{project.name}</h3>
             <img
               src={project.image[0] || ""}
-              alt="LiveChat-Ref"
+              alt={project.id}
               className={classes.refImg}
               onClick={() => handleNavigate(project.id)}
             />

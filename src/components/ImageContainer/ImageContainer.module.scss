@@ -7,25 +7,20 @@
 
   img {
     $width: 28em;
-
     width: $width;
-    height: image-height($width, 16, 9);
     border-radius: 0.6em;
     box-shadow: 0.1em 0.1em 0.7em 0 #0009;
     cursor: pointer;
 
     @include for-tablet {
       $width: 350px;
-
       width: $width;
-      height: image-height($width, 16, 9);
     }
 
     @include for-mobile-portrait {
       $width: 280px;
 
       width: $width;
-      height: image-height($width, 16, 9);
     }
   }
 }
