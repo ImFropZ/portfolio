@@ -46,7 +46,7 @@ i18next
           },
           ecommerce: {
             description:
-              "This E-Commerce website is for selling products online with authenticated users via Email, Facebook, or Google.",
+              "This E-Commerce website is for selling products online with authenticated users via Email, Facebook, or Google. Available in GitHub.",
           },
         },
       },
@@ -87,7 +87,7 @@ i18next
           },
           ecommerce: {
             description:
-              "គេហទំព័រ E-Commerce នេះគឺសម្រាប់លក់ផលិតផលអនឡាញ ជាមួយនឹងអ្នកប្រើប្រាស់ ដែលមានការផ្ទៀងផ្ទាត់តាមរយៈអ៊ីម៉ែល, Facebook ឬ Google ។",
+              "គេហទំព័រ E-Commerce នេះគឺសម្រាប់លក់ផលិតផលអនឡាញ ជាមួយនឹងអ្នកប្រើប្រាស់ ដែលមានការផ្ទៀងផ្ទាត់តាមរយៈអ៊ីម៉ែល, Facebook ឬ Google ។ មាននៅក្នុង GitHub។",
           },
         },
       },
