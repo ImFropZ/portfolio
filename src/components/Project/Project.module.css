@@ -8,8 +8,8 @@
 .projContainer .container {
   position: relative;
   margin-bottom: 1em;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .projContainer .container h1 {
   color: #2c3333;
@@ -43,18 +43,9 @@
   scale: 1.05;
 }
 .projContainer .container .btn {
-  color: #2c3333;
-  font-family: "Iceberg", "Kantumruy";
-  font-size: 14px;
-  line-height: 17px;
-  padding: 0.4em;
-  background-color: rgba(165, 201, 202, 0.7);
-  border-radius: 3px;
   cursor: pointer;
-  transition: all 500ms ease;
-}
-.projContainer .container .btn:hover {
-  background-color: #a5c9ca;
+  display: flex;
+  justify-content: flex-end;
 }
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
   .projContainer .container .btn {

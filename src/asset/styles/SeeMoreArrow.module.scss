@@ -1,0 +1,47 @@
+@use "../../abstract" as *;
+
+.frame {
+  cursor: pointer;
+  transform: rotate(-90deg);
+
+  * {
+    transition: all 500ms linear;
+  }
+
+  .blue_arrow,
+  .light_blue_arrow,
+  .dark_blue_arrow {
+    // filter: box-shadow(inset 0px -1px 5px rgba(0, 0, 0, 0.25));
+    // border-radius(0.5px);
+    filter: drop-shadow()
+  }
+
+  .blue_arrow {
+    translate: 0 10%;
+    fill: themeColor($theme, fg);
+  }
+
+  .light_blue_arrow {
+    translate: 0 -20%;
+    fill: #bcd7d7;
+  }
+
+  .dark_blue_arrow {
+    translate: 0 -100%;
+    fill: themeColor($theme, secondary);
+  }
+}
+
+svg:hover {
+  .blue_arrow {
+    translate: 0 100%;
+  }
+
+  .light_blue_arrow {
+    translate: 0 10%;
+  }
+
+  .dark_blue_arrow {
+    translate: 0 -20%;
+  }
+}

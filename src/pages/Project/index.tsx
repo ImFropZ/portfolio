@@ -5,6 +5,7 @@ import classes from "./Project.module.css";
 import { useTranslation } from "react-i18next";
 import { useProjectContext } from "../../context/ProjectContext";
 import { Navigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function Project() {
   const { t } = useTranslation();
@@ -17,6 +18,10 @@ function Project() {
     alert("Project is not in the database");
     return <Navigate to="/" />;
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const description = t(projectName + ".description") || "Null";
 

@@ -1,0 +1,34 @@
+.frame {
+  cursor: pointer;
+  transform: rotate(-90deg);
+}
+.frame * {
+  transition: all 500ms linear;
+}
+.frame .blue_arrow,
+.frame .light_blue_arrow,
+.frame .dark_blue_arrow {
+  filter: drop-shadow();
+}
+.frame .blue_arrow {
+  translate: 0 10%;
+  fill: #a5c9ca;
+}
+.frame .light_blue_arrow {
+  translate: 0 -20%;
+  fill: #bcd7d7;
+}
+.frame .dark_blue_arrow {
+  translate: 0 -100%;
+  fill: #395b64;
+}
+
+svg:hover .blue_arrow {
+  translate: 0 100%;
+}
+svg:hover .light_blue_arrow {
+  translate: 0 10%;
+}
+svg:hover .dark_blue_arrow {
+  translate: 0 -20%;
+}/*# sourceMappingURL=SeeMoreArrow.module.css.map */

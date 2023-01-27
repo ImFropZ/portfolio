@@ -2,6 +2,7 @@ import classes from "./Project.module.css";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useProjectContext } from "../../context/ProjectContext";
+import { SeeMoreArrow } from "../../asset";
 
 function Project() {
   const { t } = useTranslation();
@@ -27,11 +28,17 @@ function Project() {
               className={classes.refImg}
               onClick={() => handleNavigate(project.id)}
             />
-            <div
+            {/* <div
               className={`${classes.btn} noselect`}
               onClick={() => handleNavigate(project.id)}
             >
               {t("seeMore")}
+            </div> */}
+            <div
+              className={`${classes.btn} noselect`}
+              onClick={() => handleNavigate(project.id)}
+            >
+              <SeeMoreArrow />
             </div>
           </div>
         );

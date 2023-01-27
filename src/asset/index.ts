@@ -10,6 +10,7 @@ import BackIcon from "./svg/BackIcon";
 import USFlag from "./US_Flag.png";
 import CambodiaFlag from "./Cambodia_Flag.png";
 import LinkedinIcon from "./svg/LinkedinIcon";
+import SeeMoreArrow from "./svg/SeeMoreArrow";
 
 export {
   avatar,
@@ -24,4 +25,5 @@ export {
   CopyrightIcon,
   BackIcon,
   LinkedinIcon,
+  SeeMoreArrow,
 };
