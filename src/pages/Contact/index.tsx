@@ -3,7 +3,7 @@ import { createTransport, createTestAccount, Transporter } from "nodemailer";
 import classes from "./Contact.module.css";
 
 function Contact() {
-  return <button>Contact us</button>;
+  return <h1>This page is still under maintenance.</h1>;
 }
 
 export default Contact;

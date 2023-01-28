@@ -1,0 +1,41 @@
+@use "../../abstract" as *;
+
+.greater_arrow,
+.lesser_arrow,
+.dash {
+  stroke: themeColor($theme, secondary);
+}
+
+.lesser_than_sign {
+  rotate: 180deg;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  .right_side,
+  .left_side {
+    transition: all 500ms ease;
+    background: inherite;
+  }
+
+  .context {
+    color: white;
+    font-family: sans-serif;
+  }
+
+  &:hover {
+    --var-moveLength: 1em;
+
+    .right_side {
+      transform: translateX(var(--var-moveLength));
+    }
+
+    .left_side {
+      transform: translateX(calc(-1 * var(--var-moveLength)));
+    }
+  }
+}

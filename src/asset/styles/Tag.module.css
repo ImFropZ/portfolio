@@ -1,0 +1,34 @@
+.greater_arrow,
+.lesser_arrow,
+.dash {
+  stroke: #395b64;
+}
+
+.lesser_than_sign {
+  rotate: 180deg;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.container .right_side,
+.container .left_side {
+  transition: all 500ms ease;
+  background: inherite;
+}
+.container .context {
+  color: white;
+  font-family: sans-serif;
+}
+.container:hover {
+  --var-moveLength: 1em;
+}
+.container:hover .right_side {
+  transform: translateX(var(--var-moveLength));
+}
+.container:hover .left_side {
+  transform: translateX(calc(-1 * var(--var-moveLength)));
+}/*# sourceMappingURL=Tag.module.css.map */

@@ -2,7 +2,7 @@ import classes from "./Project.module.css";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useProjectContext } from "../../context/ProjectContext";
-import { SeeMoreArrow } from "../../asset";
+import { SeeMoreArrow, Tag } from "../../asset";
 
 function Project() {
   const { t } = useTranslation();
@@ -17,7 +17,9 @@ function Project() {
 
   return (
     <div className={classes.projContainer}>
-      <h1>{t("workExperience")}</h1>
+      <Tag>
+        <h1>{t("workExperience")}</h1>
+      </Tag>
       {Project.map((project) => {
         return (
           <div className={classes.container} key={project.id}>

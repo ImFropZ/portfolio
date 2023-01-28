@@ -34,7 +34,7 @@ i18next
           aboutmeDesc: {
             firstHalf: "I’m a student from the",
             lastHalf:
-              "also known as RUPP. I had an interest in being a Web Developer. I love seeking new knowledge.",
+              "also known as RUPP. I had an interest in being as a front-end Developer. I love seeking new knowledge.",
           },
           livechat: {
             description:
@@ -75,7 +75,7 @@ i18next
           aboutmeDesc: {
             firstHalf: "ខ្ញុំគឺជានិសិត្សនៅក្នុង",
             lastHalf:
-              "ដែលហៅកាត់ថា RUPP.ហើយខ្ញុំមានចំណាប់អារម្មណ៍ទៅលើការធ្វើជា Web Developer.ខ្ញុំចូលចិត្តស្វែងរកចំណេះដឹងថ្មីៗ.",
+              "ដែលហៅកាត់ថា RUPP.ហើយខ្ញុំមានចំណាប់អារម្មណ៍ទៅលើការធ្វើជា Front-end Developer.ខ្ញុំចូលចិត្តស្វែងរកចំណេះដឹងថ្មីៗ.",
           },
           livechat: {
             description:

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Tag } from "../../asset";
 import classes from "./Skill.module.css";
 
 function index() {
@@ -6,12 +7,14 @@ function index() {
 
   return (
     <div className={classes.skill}>
-      <h2>{t("skill")}</h2>
+      <Tag>
+        <h2>{t("skill")}</h2>
+      </Tag>
       <ul>
         <li>HTML, CSS, JavaScript</li>
         <li>ReactJS, ExpressJS, NodeJS</li>
-        <li>SCSS, TypeScript, Axios</li>
-        <li>GIT CLI</li>
+        <li>SCSS, TailwindCSS, TypeScript, Redux</li>
+        <li>Code Management: GitHub</li>
         <li>Database : SQL</li>
       </ul>
     </div>
