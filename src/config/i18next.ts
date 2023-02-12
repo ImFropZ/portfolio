@@ -36,6 +36,10 @@ i18next
             lastHalf:
               "also known as RUPP. I had an interest in being as a front-end Developer. I love seeking new knowledge.",
           },
+          frontendmentor: {
+            description:
+              "This is my solution for the frontend mentor challenge I have participated in to improve my CSS and HTML skills. Available on my GitHub.",
+          },
           livechat: {
             description:
               "The project is about getting a comment or chat on a live-stream video. Login with Facebook and Your account can bind with Gmail. This project uses Facebook API.",
@@ -76,6 +80,10 @@ i18next
             firstHalf: "ខ្ញុំគឺជានិសិត្សនៅក្នុង",
             lastHalf:
               "ដែលហៅកាត់ថា RUPP.ហើយខ្ញុំមានចំណាប់អារម្មណ៍ទៅលើការធ្វើជា Front-end Developer.ខ្ញុំចូលចិត្តស្វែងរកចំណេះដឹងថ្មីៗ.",
+          },
+          frontendmentor: {
+            description:
+              "នេះគឺជាដំណោះស្រាយរបស់ខ្ញុំសម្រាប់ការប្រកួត ប្រជែង Frontend Mentor ដែលខ្ញុំបានចូលរួមដើម្បីបង្កើនជំនាញ CSS និង HTML របស់ខ្ញុំ។ មាននៅលើ GitHub របស់ខ្ញុំ។",
           },
           livechat: {
             description:

@@ -1,37 +1,43 @@
 /* English Font */
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter-Regular.ttf");
+  src: local("Inter"), url("./fonts/inter-regular.woff"),
+    url("./fonts/inter-regular.woff2");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter-Bold.ttf");
+  src: local("Inter"), url("./fonts/inter-bold.woff"),
+    url("./fonts/inter-bold.woff2");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Iceberg";
-  src: url("./fonts/Iceberg-Regular.ttf");
+  src: local("Iceberg"), url("./fonts/iceberg-regular.woff"),
+    url("./fonts/iceberg-regular.woff2");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Itim";
-  src: url("./fonts/Itim-Regular.ttf");
+  src: local("Itim"), url("./fonts/itim-regular.woff"),
+    url("./fonts/itim-regular.woff2");
   font-weight: 400;
 }
 
 /* Khmer Font */
 @font-face {
   font-family: "Kantumruy";
-  src: url("./fonts/Kantumruy-Regular.ttf");
+  src: local("Kantumruy"), url("./fonts/kantumruy-regular.woff"),
+    url("./fonts/kantumruy-regular.woff2");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Kantumruy";
-  src: url("./fonts/Kantumruy-Bold.ttf");
+  src: local("Kantumruy"), url("./fonts/kantumruy-bold.woff"),
+    url("./fonts/kantumruy-bold.woff2");
   font-weight: 700;
 }

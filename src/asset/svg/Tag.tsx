@@ -22,7 +22,7 @@ function Tag({ children }: Props) {
               className={classes.greater_arrow}
               d="M26 2L4 15L26 28"
               stroke="black"
-              stroke-width="3"
+              strokeWidth="3"
             />
           </g>
         </svg>
@@ -37,12 +37,12 @@ function Tag({ children }: Props) {
           xmlns="http://www.w3.org/2000/svg"
           className={classes.dash_sign}
         >
-          <g clip-path="url(#clip0_15_9)">
+          <g clipPath="url(#clip0_15_9)">
             <path
               className={classes.dash}
               d="M11 1L2 29"
               stroke="black"
-              stroke-width="3"
+              strokeWidth="3"
             />
           </g>
           <defs>
@@ -64,7 +64,7 @@ function Tag({ children }: Props) {
               className={classes.lesser_arrow}
               d="M26 2L4 15L26 28"
               stroke="black"
-              stroke-width="3"
+              strokeWidth="3"
             />
           </g>
         </svg>

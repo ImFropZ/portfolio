@@ -3,8 +3,20 @@ import React, { createContext, useContext } from "react";
 import liveChat from "../asset/project/live_chat";
 import classManagement from "../asset/project/class_management";
 import ecommerce from "../asset/project/e_commerce";
+import frontendmentor from "../asset/project/frontend_mentor";
 
 export const project = [
+  {
+    id: "frontendmentor",
+    name: "Frontend Mentor Challenge",
+    image: [
+      frontendmentor.newsChallenge,
+      frontendmentor.newsChallengeDark,
+      frontendmentor.productPreviewCard,
+    ],
+    language: ["HTML", "CSS", "JavaScript"],
+    other: ["TailwindCSS", "SCSS"],
+  },
   {
     id: "livechat",
     name: "Live-Chat Facebook",
@@ -76,6 +88,8 @@ export const ProjectContextProvider = ({
   children: React.ReactNode;
 }) => {
   return (
-    <projectContext.Provider value={project}>{children}</projectContext.Provider>
+    <projectContext.Provider value={project}>
+      {children}
+    </projectContext.Provider>
   );
 };
